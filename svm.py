@@ -57,3 +57,9 @@ y_pred2 = clf2.predict(xte2)
 m = yte2.shape[0]
 n = (yte2 != y_pred2).sum()
 print("Accuracy of Tags = " + format((m-n)/m*100, '.2f') + "%")
+
+filename = 'priority.sav'
+pickle.dump(clf, open(filename, 'wb'))
+
+filename1 = 'tags.sav'
+pickle.dump(clf2, open(filename1, 'wb'))
