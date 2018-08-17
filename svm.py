@@ -63,3 +63,7 @@ pickle.dump(clf, open(filename, 'wb'))
 
 filename1 = 'tags.sav'
 pickle.dump(clf2, open(filename1, 'wb'))
+
+# Draw the confusion matrix
+# plot_cmat(yte, y_pred)
+# plot_cmat(yte2, y_pred2)
